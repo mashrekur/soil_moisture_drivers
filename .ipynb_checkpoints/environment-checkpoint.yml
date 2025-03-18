@@ -1,0 +1,39 @@
+name: soil_moisture_dynamics
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9  # Consistent Python version for stability
+  - pip
+  # Core data processing and scientific computing
+  - numpy>=1.23.0
+  - pandas>=1.5.0
+  - xarray>=2023.1.0
+  - netcdf4>=1.6.0
+  - scipy>=1.10.0
+  # Machine learning and modeling
+  - pytorch>=2.0.0  # For EnhancedSpatiotemporalModel and training
+  - scikit-learn>=1.2.0  # For KMeans, metrics (r2_score, mean_squared_error)
+  - tqdm>=4.65.0  # Progress bars in training
+  # Visualization
+  - matplotlib>=3.7.0  # Core plotting library
+  - seaborn>=0.12.0  # Enhanced statistical visualizations
+  - cartopy>=0.21.0  # Geospatial mapping for CONUS visualizations
+  - holoviews>=1.16.0  # Interactive visualizations (chord diagrams)
+  - colorcet>=3.0.1  # Custom colormaps
+  # Data acquisition APIs and tools
+  - cdsapi>=0.6.1  # ERA5 data download from Copernicus
+  - earthengine-api>=0.1.300  # Google Earth Engine for land cover data
+  - folium>=0.14.0  # Interactive maps for land cover visualization
+  # Geospatial and utilities
+  - geopandas>=0.13.0  # Spatial data handling
+  - requests>=2.28.0  # API calls (e.g., SoilGrids)
+  - h5py>=3.8.0  # Handling HDF5 files if needed
+  # Additional dependencies
+  - networkx>=3.1  # Feature relationship networks (chord diagrams)
+  - ipython>=8.10.0  # For interactive development (optional)
+  - jupyter>=1.0.0  # For running scripts in notebooks (optional)
+  - pip:
+      # Install packages not available in conda-forge via pip
+      - astropy>=5.2.0  # For potential astronomical calculations (if used)
+      - torch-geometric>=2.3.0  # Optional for graph-based extensions
