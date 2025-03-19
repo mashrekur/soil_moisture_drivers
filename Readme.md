@@ -1,5 +1,7 @@
 # Drivers of Soil Moisture Dynamics over Continental United States
 
+[![DOI](https://zenodo.org/badge/950905833.svg)](https://doi.org/10.5281/zenodo.15053826)
+
 Welcome to the GitHub repository for the research paper "Drivers of Soil Moisture Dynamics over Continental United States", submitted to Water Resources Research. This codebase supports a novel study exploring the complex drivers of soil moisture dynamics across the Continental United States (CONUS) using a spatially-aware Vision Transformer (ViT) architecture. Our approach integrates local and regional influences, leveraging data from 360 International Soil Moisture Network (ISMN) stations alongside comprehensive environmental datasets—ERA5 climate reanalysis, USGS elevation products, MODIS land cover, and SoilGrids soil characteristics. The resulting model achieves systematic improvements in prediction skill over 24, 48, and 72-hour forecast horizons, revealing key insights into soil-environment interactions through dual-method feature importance analysis (Cohen's d and SHAP values).
 This repository contains a comprehensive set of Python scripts organized into three main categories:
 
